@@ -1,0 +1,81 @@
+/* styles.css */
+
+/* General */
+body {
+  background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+h1 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+/* Contenedor de tabla */
+.table-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Asegura visibilidad */
+  overflow-x: auto;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Tabla */
+.table th,
+.table td {
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.table thead {
+  background-color: #00796b;
+  color: white;
+}
+
+.table tbody tr:hover {
+  background-color: #e0f2f1;
+}
+
+/* Nombre y apellido */
+.nombre-apellido {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Botones */
+.btn svg {
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.acciones a {
+  margin-right: 5px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .table-container {
+    padding: 10px;
+  }
+
+  .nombre-apellido {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .acciones a {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
